@@ -1,0 +1,8 @@
+{
+    "auto-close-tag.activationOnLanguage": [
+        "php",
+        "html",
+        "xml"
+    ]
+
+}
