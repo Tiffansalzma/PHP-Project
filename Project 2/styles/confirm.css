@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    box-sizing:border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{    
+    list-style: none;
+}
+
+.content1{
+    height: 145px;
+    border-radius: 20px 20px 0 0;
+    background-color: #0F8B8D;
+}
+
+.navbar{
+    margin: 0 auto;
+    width: 85%;
+    display: flex;
+    justify-content:space-between;
+    padding-top:40px;
+}
+
+.list-nav ul{
+    display: flex;
+}
+
+.list-nav li{
+    padding: 0 30px;
+}
+
+.list-nav li a{
+    color: white;
+    font-size: 30px;
+}
+
+.content2{
+    padding: 50px 0;
+}
+
+.content2 .container{
+    width: 65%;
+    margin: 0 auto;
+}
+
+.content2 .container h3{
+    font-size: 48px;
+    font-weight: 800;
+    color:#0F8B8D;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.field{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #D2D2D2;
+    border-radius: 20px;
+    padding: 35px;
+}
+
+.input{
+    padding: 0 50px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input .title{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.input p{
+    font-size: 20px;
+}
+
+.text-area{
+    padding: 0 50px;
+}
+
+.text-area .title{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.text-area p{
+    font-size: 20px;
+}
+
+footer{
+    height: 360px;
+    background-color: #143642;
+    border-radius: 30px;
+}
+
+footer .container{
+    display: flex;
+    margin: 0 auto;
+    width: 85%;
+    padding-top: 80px;
+}
+
+.logo .logo-img{
+    width: 335px;
+    height: 67px;
+    margin-bottom: 20px;
+}
+
+.list1, .list2, .list3{
+    color: #F9FBFE;
+    font-size: 24px;
+    padding: 0 50px;
+}
+
+.list1 li, .list2 li , .list3 li{
+    padding-bottom: 20px;
+}
+
+.active{
+    color: #EC9A29;
+}
+
+
+/* Responsive CSS */
+
+@media (max-width:1000px){
+    .navbar .logo img{
+        width: 250px;
+        height: 50px;
+    }
+    .list-nav li a{
+        font-size: 25px;
+    }
+    
+    footer{
+        height: 360px;
+    }
+
+    footer .container{
+        display: flex;
+        margin: 0 auto;
+        width: 90%;
+        padding-top: 40px;
+    }
+
+    .logo .logo-img{
+        width: 250px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .list1, .list2, .list3{
+        font-size: 22px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width:670px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar .logo img{
+        width: 135px;
+        height: 27px;
+    }
+    .list-nav ul{
+        margin-top: 20px;
+    }
+    .list-nav li{
+        padding: 0 30px;
+    }
+    .list-nav li a{
+        font-size: 14px;
+    }
+    
+    .content2 .container h3{
+        font-size: 30px;
+    }
+
+    .field{
+        width: 100%;
+    }
+
+    .input{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+
+    .input p{
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    input{
+        width: 231px;
+        height: 23px;
+        border-radius: 5px;
+        padding: 15px 0 15px 30px;
+    }
+
+    .text-area{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    textarea{
+        width: 231px;
+        height: 100px;
+        border-radius: 20px;
+        border: 2px solid #D2D2D2;
+    }
+
+    .text-area p{
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .field a{
+        font-size: 12px;
+        width: 135px;
+        height: 28px;
+    }
+
+    footer{
+        height: 360px;
+        border-radius: 20px;
+    }
+
+    footer .container{
+        display: flex;
+        flex-direction: column;        
+        padding-top: 15px;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo .logo-img{
+        width: 145px;
+        height: 29px;
+        margin-bottom: 20px;
+    }
+
+    .contact img{
+        width: 25px;
+        height: 20px;
+        margin: 0 10px;
+    }
+    .list1, .list2, .list3{
+        color: #F9FBFE;
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .list1 li, .list2 li , .list3 li{
+        padding-bottom: 15px;
+    }
+
+    .active{
+        font-size: 14px;
+        color: #EC9A29;
+        margin-left: -20px;
+    }
+}

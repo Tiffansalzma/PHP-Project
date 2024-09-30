@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    box-sizing:border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{    
+    list-style: none;
+}
+
+.content1{
+    height: 145px;
+    border-radius: 20px 20px 0 0;
+    background-color: #0F8B8D;
+}
+
+.navbar{
+    margin: 0 auto;
+    width: 85%;
+    display: flex;
+    justify-content:space-between;
+    padding-top:40px;
+}
+
+.list-nav ul{
+    display: flex;
+}
+
+.list-nav li{
+    padding: 0 30px;
+}
+
+.list-nav li a{
+    color: white;
+    font-size: 30px;
+}
+
+.content2{
+    padding: 50px 0;
+}
+
+.content2 .container{
+    padding: 50px 150px;
+}
+
+.h3{
+    font-size: 48px;
+    font-weight: 800;
+    color: #0F8B8D;
+}
+
+.h3-2{
+    display: none;
+    font-size: 48px;
+    font-weight: 800;
+    color: #0F8B8D;
+}
+
+.store{
+    display: flex;
+}
+
+.location{
+    width: 70%;
+    padding: 10px 70px 0 0;
+}
+
+.location p{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.loc{
+    width: 474px;
+    height: 196px;
+    border: 1px solid #D2D2D2;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding: 20px 15px 0 25px;
+}
+
+.loc h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: #143642;
+    margin-bottom: 15px;
+}
+
+.loc p{
+    font-size: 20px;
+    font-weight: 400;
+    color:#143642 ;
+}
+
+.maps img{
+    width: 581.95px;
+    height: 580.29px;
+    border-radius: 20px;
+}
+
+footer{
+    height: 360px;
+    background-color: #143642;
+    border-radius: 30px;
+}
+
+footer .container{
+    display: flex;
+    margin: 0 auto;
+    width: 85%;
+    padding-top: 80px;
+}
+
+.logo .logo-img{
+    width: 335px;
+    height: 67px;
+    margin-bottom: 20px;
+}
+
+.list1, .list2, .list3{
+    color: #F9FBFE;
+    font-size: 24px;
+    padding: 0 50px;
+}
+
+.list1 li, .list2 li , .list3 li{
+    padding-bottom: 20px;
+}
+
+.active{
+    color: #EC9A29;
+}
+
+
+/* Responsive CSS */
+
+@media (max-width:1000px){
+    .navbar .logo img{
+        width: 250px;
+        height: 50px;
+    }
+    .list-nav li a{
+        font-size: 25px;
+    }
+    
+    footer{
+        height: 360px;
+    }
+
+    footer .container{
+        display: flex;
+        margin: 0 auto;
+        width: 90%;
+        padding-top: 40px;
+    }
+
+    .logo .logo-img{
+        width: 250px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .list1, .list2, .list3{
+        font-size: 22px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width:670px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar .logo img{
+        width: 135px;
+        height: 27px;
+    }
+    .list-nav ul{
+        margin-top: 20px;
+    }
+    .list-nav li{
+        padding: 0 30px;
+    }
+    .list-nav li a{
+        font-size: 14px;
+    }
+    
+    .content2 .container{
+        padding: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .h3{
+        display: none; 
+    }
+
+    .h3-2{
+        display: block;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .store{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .maps img{
+        width: 284.87px;
+        height: 284.87px;
+    }
+    .location{
+        width: 60%;
+        padding: 10px 0;
+    }
+
+    .location p{
+        font-size: 12px;
+    }
+
+    .loc{
+        width: 280px;
+        height: 111px;
+        padding: 20px 15px 100px 25px;
+    }
+
+    .loc h3{
+        font-size: 16px;
+    }
+    
+    .loc p{
+        font-size: 12px;
+    }
+
+    footer{
+        height: 360px;
+        border-radius: 20px;
+    }
+
+    footer .container{
+        display: flex;
+        flex-direction: column;        
+        padding-top: 15px;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo .logo-img{
+        width: 145px;
+        height: 29px;
+        margin-bottom: 20px;
+    }
+
+    .contact img{
+        width: 25px;
+        height: 20px;
+        margin: 0 10px;
+    }
+    .list1, .list2, .list3{
+        color: #F9FBFE;
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .list1 li, .list2 li , .list3 li{
+        padding-bottom: 15px;
+    }
+
+    .active{
+        font-size: 14px;
+        color: #EC9A29;
+        margin-left: -20px;
+    }
+}

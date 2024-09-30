@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    box-sizing:border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{    
+    list-style: none;
+}
+
+.content1{
+    height: 145px;
+    border-radius: 20px 20px 0 0;
+    background-color: #0F8B8D;
+}
+
+.navbar{
+    margin: 0 auto;
+    width: 85%;
+    display: flex;
+    justify-content:space-between;
+    padding-top:40px;
+}
+
+.list-nav ul{
+    display: flex;
+}
+
+.list-nav li{
+    padding: 0 30px;
+}
+
+.list-nav li a{
+    color: white;
+    font-size: 30px;
+}
+
+.content2{
+    padding: 50px 0;
+}
+
+.detail-produk{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.product-img{
+    width: 500px;
+}
+
+.product-info{
+    padding-top: 80px;
+}
+
+.product-info h3{
+    font-size: 48px;
+    font-weight: 800;
+    color: #0F8B8D;
+    margin-bottom: 30px;
+}
+
+.product-info p{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.product-info h2{
+    font-size: 40px;
+    font-weight: 800;
+    color: #0F8B8D;
+}
+
+.deskripsi{    
+    width: 55%;
+    margin: 0 auto;
+}
+
+.deskripsi h3{
+    font-size: 48px;
+    font-weight: 500;
+    color:#0F8B8D;
+    border-bottom: #EC9A29 solid 3px;
+    width: max-content;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.deskripsi p{
+    font-size: 24px;
+    font-weight: 400;
+    width: 80%;
+}
+
+.deskripsi a{
+    margin-top: 60px;
+    display: flex;
+    width: 335px;
+    height: 70px;
+    background-color: #A8201A;
+    border-radius: 55px;
+    color: white;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    height: 360px;
+    background-color: #143642;
+    border-radius: 30px;
+}
+
+footer .container{
+    display: flex;
+    margin: 0 auto;
+    width: 85%;
+    padding-top: 80px;
+}
+
+.logo .logo-img{
+    width: 335px;
+    height: 67px;
+    margin-bottom: 20px;
+}
+
+.list1, .list2, .list3{
+    color: #F9FBFE;
+    font-size: 24px;
+    padding: 0 50px;
+}
+
+.list1 li, .list2 li , .list3 li{
+    padding-bottom: 20px;
+}
+
+.active{
+    color: #EC9A29;
+}
+
+
+/* Responsive CSS */
+
+@media (max-width:1000px){
+    .navbar .logo img{
+        width: 250px;
+        height: 50px;
+    }
+    .list-nav li a{
+        font-size: 25px;
+    }
+    .detail-produk{
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+    }
+    .product-info{
+        padding-top: 70px;
+    }
+
+    .product-img img{
+        width: 479px;
+        height: 385px;
+    }
+    .product-info h3{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .product-info p{
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .product-info h2{
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+
+    .deskripsi{    
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .deskripsi h3{
+        font-size: 40px;
+    }
+
+    .deskripsi p{
+        font-size: 20px;
+    }
+
+    .deskripsi a{
+        margin-top: 30px;
+        width: 235px;
+        height: 60px;
+        font-size: 16px;
+    }
+    footer{
+        height: 360px;
+    }
+
+    footer .container{
+        display: flex;
+        margin: 0 auto;
+        width: 90%;
+        padding-top: 40px;
+    }
+
+    .logo .logo-img{
+        width: 250px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .list1, .list2, .list3{
+        font-size: 22px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width:670px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar .logo img{
+        width: 135px;
+        height: 27px;
+    }
+    .list-nav ul{
+        margin-top: 20px;
+    }
+    .list-nav li{
+        padding: 0 30px;
+    }
+    .list-nav li a{
+        font-size: 14px;
+    }
+    
+    .detail-produk{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+    .product-info{
+        padding-top: 10px;
+    }
+
+    .product-img img{
+        width: 379px;
+        height: 285px;
+    }
+    .product-info h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .product-info p{
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .product-info h2{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .deskripsi h3{
+        font-size: 20px;
+        border-bottom: #EC9A29 solid 3px;
+        width: 95%;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .deskripsi p{
+        font-size: 12px;
+    }
+
+    .deskripsi a{
+        margin-top: 30px;
+        width: 135px;
+        height: 28px;
+        font-size: 10px;
+    }
+
+    footer{
+        height: 360px;
+        border-radius: 20px;
+    }
+
+    footer .container{
+        display: flex;
+        flex-direction: column;        
+        padding-top: 15px;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo .logo-img{
+        width: 145px;
+        height: 29px;
+        margin-bottom: 20px;
+    }
+
+    .contact img{
+        width: 25px;
+        height: 20px;
+        margin: 0 10px;
+    }
+    .list1, .list2, .list3{
+        color: #F9FBFE;
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .list1 li, .list2 li , .list3 li{
+        padding-bottom: 15px;
+    }
+
+    .active{
+        font-size: 14px;
+        color: #EC9A29;
+        margin-left: -20px;
+    }
+}

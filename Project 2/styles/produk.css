@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    box-sizing:border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{    
+    list-style: none;
+}
+
+.content1{
+    height: 145px;
+    border-radius: 20px 20px 0 0;
+    background-color: #0F8B8D;
+}
+
+.navbar{
+    margin: 0 auto;
+    width: 85%;
+    display: flex;
+    justify-content:space-between;
+    padding-top:40px;
+}
+
+.list-nav ul{
+    display: flex;
+}
+
+.list-nav li{
+    padding: 0 30px;
+}
+
+.list-nav li a{
+    color: white;
+    font-size: 30px;
+}
+
+.content2{
+    padding: 150px 0;
+}
+
+.product{
+    text-align: center;
+}
+
+.product h3{
+    font-size: 48px;
+    font-weight: 700;
+    color: #0F8B8D;
+}
+
+.product p{
+    font-size: 24px;
+    font-weight: 500;
+    color: #143642;
+}
+
+.menu{
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 780px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-box{
+    margin: 0 auto;
+    flex: auto;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.menu-box img{
+    border-radius: 20px;
+}
+
+.menu-box .deskripsi {
+    position: absolute;
+    top: 15px;
+    width: 100%;
+}
+
+.menu-box a{
+    color: #F9FBFE;    
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.menu-box a:hover {
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+.menu-box .price{
+    position: absolute;
+    top: 43px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    color: #F9FBFE;
+}
+
+.product-img{
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    z-index: 99;
+}
+
+.product-img img{
+    width: 186px;
+    height: 139.5px;
+    transition: transform 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-2px, 3px); }
+    50% { transform: translate(2px, -3px); }
+    75% { transform: translate(-2px, 3px); }
+    100% { transform: translate(0, 0); }
+}
+
+.product-img img:hover{
+    animation: shake 0.8s ease-in-out;
+}
+
+footer{
+    height: 360px;
+    background-color: #143642;
+    border-radius: 30px;
+}
+
+footer .container{
+    display: flex;
+    margin: 0 auto;
+    width: 85%;
+    padding-top: 80px;
+}
+
+.logo .logo-img{
+    width: 335px;
+    height: 67px;
+    margin-bottom: 20px;
+}
+
+.list1, .list2, .list3{
+    color: #F9FBFE;
+    font-size: 24px;
+    padding: 0 50px;
+}
+
+.list1 li, .list2 li , .list3 li{
+    padding-bottom: 20px;
+}
+
+.active{
+    color: #EC9A29;
+}
+
+/* Responsive CSS */
+
+@media (max-width:1000px){
+    .navbar .logo img{
+        width: 250px;
+        height: 50px;
+    }
+    .list-nav li a{
+        font-size: 25px;
+    }
+    .menu{
+    width: 80%;
+    }
+    footer{
+        height: 360px;
+    }
+
+    footer .container{
+        display: flex;
+        margin: 0 auto;
+        width: 90%;
+        padding-top: 40px;
+    }
+
+    .logo .logo-img{
+        width: 250px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .list1, .list2, .list3{
+        font-size: 22px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width:670px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar .logo img{
+        width: 135px;
+        height: 27px;
+    }
+    .list-nav ul{
+        margin-top: 20px;
+    }
+    .list-nav li{
+        padding: 0 30px;
+    }
+    .list-nav li a{
+        font-size: 14px;
+    }
+    .content2{
+        padding: 50px 0;
+    }
+    .product h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .product p{
+        font-size: 12px;
+    }
+    .menu{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }    
+    .menu-box .deskripsi{
+        font-size: 12px;
+    }
+    
+    .menu-box .price{
+        font-size: 12px;
+    }     
+    footer{
+        height: 360px;
+        border-radius: 20px;
+    }
+
+    footer .container{
+        display: flex;
+        flex-direction: column;        
+        padding-top: 15px;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo .logo-img{
+        width: 145px;
+        height: 29px;
+        margin-bottom: 20px;
+    }
+
+    .contact img{
+        width: 25px;
+        height: 20px;
+        margin: 0 10px;
+    }
+    .list1, .list2, .list3{
+        color: #F9FBFE;
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .list1 li, .list2 li , .list3 li{
+        padding-bottom: 15px;
+    }
+
+    .active{
+        font-size: 14px;
+        color: #EC9A29;
+        margin-left: -20px;
+    }
+}
+
